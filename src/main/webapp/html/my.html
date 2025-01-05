@@ -5,7 +5,7 @@
     <link href="/css/my.css" rel="stylesheet">
 </head>
 <body onload="show_list_data(0)">
-<h1>RPG admin panel</h1>
+<h1 class="custom-colored-h1">RPG admin panel</h1>
 
 <label for="count_1">Count per page:</label>
 <select id="count_1" onchange="show_list_data(0)">
@@ -150,7 +150,7 @@
         let identifier = "#paging_button_" + page_number;
         $(identifier).css('color', "red");
     }
-    
+
     function getTotalCount() {
         let url = "/rest/players/count";
         let res = 0;
@@ -165,7 +165,7 @@
 
         console.log(res)
         return res;
-        
+
     }
 
     function deleteAcc(id){
@@ -287,11 +287,11 @@
             }),
             success: function () {
                 show_list_data(getCurrentPage());
-                
+
             }
         });
     }
-    
+
     function getDropDownRaceHtml(id){
         let race_id = "select_race_" + id;
         return "<label for='race'></label>"

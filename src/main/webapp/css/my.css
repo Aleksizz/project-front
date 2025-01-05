@@ -1,4 +1,30 @@
 th, td {
-    border: 1px solid black;
-    padding: 3px;
+    border: 2px solid black;
+    padding: 4px;
+    background-color: rgba(39,58,157,0.3);
+}
+
+.custom-colored-h1{
+    color: midnightblue;
+}
+
+body{
+    background-color: lavender;
+}
+
+img {
+    width: 20px;
+    height: 20px;
+}
+
+input{
+    background-color: #a5c3ff;
+}
+
+select{
+    background-color: #c5d2ff;
+}
+
+button{
+    background-color: #978dff;
 }
